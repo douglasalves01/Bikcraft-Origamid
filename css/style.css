@@ -1,82 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-ul {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-.header-bg {
-  background: #000;
-}
-.header {
-  display: flex;
-  flex-wrap: wrap; /*quebra a linha quando não tem mais espaço*/
-  gap: 1.25rem;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 1.25rem;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-}
-.header-menu a {
-  color: #fff;
-  display: inline-block;
-  padding: 1rem 0;
-  font-size: 1.12rem;
-  position: relative;
-}
-.header-menu a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0px;
-  background: #fff;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap");
 
-.header-menu a:hover:after {
-  width: 100%;
-}
-@media (max-width: 800px) /*abaixo de 800px....*/ {
-  .header-menu {
-    gap: 1.25rem;
-  }
-  .header-menu a /*mudando a forma dos links*/ {
-    background: #111111;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-  }
-  .header-menu a:hover {
-    background: #2e2e2e;
-  }
-  .header a:after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 0.75rem;
-  }
-  .header-menu a {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.8rem;
-  }
-}
+@import "./global/header.css";
+@import "./global/global.css";
+@import "./home/introducao.css";
+@import "./utilidades/componentes.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
