@@ -21,4 +21,9 @@ a {
 }
 img {
   max-width: 100%;
+  display: block;
+}
+img[src$=".jpg"] {
+  /*seleciona apenas elemento com src e que termina com jpg*/
+  border-radius: 4px;
 }

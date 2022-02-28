@@ -1,6 +1,5 @@
 .header-bg {
-  background: #000;
-  display: block;
+  background: var(--cor-11);
 }
 .header {
   display: flex;
@@ -8,10 +7,7 @@
   gap: 1.25rem;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 1.25rem 0rem 1.25rem 0rem;
 }
 .header-menu {
   display: flex;
@@ -21,17 +17,14 @@
 .header-menu a {
   display: inline-block;
   padding: 1rem 0;
-  font-size: 1.12rem;
   position: relative;
-  font-family: "Poppins";
-  font-weight: 400;
 }
 .header-menu a::after {
   content: "";
   display: block;
   height: 2px;
   width: 0px;
-  background: #fff;
+  background: var(--cor-0);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
@@ -45,12 +38,12 @@
     gap: 1.25rem;
   }
   .header-menu a /*mudando a forma dos links*/ {
-    background: #111111;
+    background: var(--cor-11);
     padding: 0.75rem 1rem;
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background: #2e2e2e;
+    background: var(--cor-10);
   }
   .header a:after {
     display: none;
