@@ -7,11 +7,14 @@
 .bicicletas-lista ul {
   display: flex;
   gap: 2.5rem;
-  padding: 0rem 1.25rem 1.25rem;
+  padding: 0rem 1.25rem 1.25rem 1.25rem;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: auto;
+}
+#bicicleta .bicicletas-lista ul {
+  padding: 0rem 0rem 1.25rem 0rem;
 }
 .bicicletas-lista li {
   flex: 1;
